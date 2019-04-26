@@ -1,0 +1,110 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  margin: auto; }
+  header .header-inner {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+@media (min-width: 576px) {
+  header .header-inner {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  header .header-inner {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  header .header-inner {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  header .header-inner {
+    max-width: 1140px; } }
+
+.hero {
+  background: url("../img/head2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .hero h1, .hero h3 {
+    width: 100%; }
+  .hero button {
+    margin: auto; }
+
+.about {
+  background: url("../img/context2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .about .about-inner .about-content {
+    background: rgba(128, 215, 247, 0.5); }
+
+.news .news-inner .news-img .news-img-inner {
+  background: url("../img/approach2.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.opaline {
+  background: url("../img/why2.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .opaline .opaline-inner .opaline-content {
+    background: rgba(128, 215, 247, 0.5); }
+
+.team .team-inner .team-img {
+  background: url("../img/team2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.sponsors .sponsors-inner h4 {
+  width: 100%; }
+
+.sponsors .sponsors-inner img {
+  max-width: 100%; }
+
+.prefooter {
+  background: url("../img/thankyou2.jpg");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+footer {
+  background: #24323b;
+  color: white; }
