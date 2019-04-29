@@ -8,6 +8,7 @@ header {
   margin: auto; }
   header .header-inner {
     width: 100%;
+    padding-top: 1.8em;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -52,6 +53,7 @@ header {
 
 @media (min-width: 768px) {
   header .header-inner {
+    padding-top: 3em;
     max-width: 720px; }
   header .logo-wrapper h4 {
     font-size: 22px; } }
@@ -62,6 +64,7 @@ header {
 
 @media (min-width: 1200px) {
   header .header-inner {
+    padding-top: 3.4em;
     max-width: 1140px; } }
 
 .hero .hero-inner {
@@ -93,7 +96,8 @@ header {
     font-size: 2.3em;
     line-height: 1.15em; }
   .hero .hero-inner h4 {
-    font-weight: normal; }
+    font-weight: normal;
+    line-height: 1.2em; }
   .hero .hero-inner button {
     margin: auto; }
 
@@ -101,7 +105,9 @@ header {
   .hero .hero-inner h1 {
     width: 70%;
     font-size: 3.3em;
-    line-height: 1.2em; } }
+    line-height: 1.2em; }
+  .hero .hero-inner h4 {
+    line-height: 1.4em; } }
 
 @media (min-width: 1440px) {
   .hero .hero-inner h1 {
