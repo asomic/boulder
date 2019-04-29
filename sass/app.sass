@@ -36,45 +36,52 @@ header
       max-width: 1140px
 
 .hero
-  background: url('../img/head2.jpg')
-  background-position: center
-  background-attachment: fixed
-  background-repeat: no-repeat
-  background-size: cover
-  width: 100%
-  height: 100vh
-  text-align: center
-  display: flex
-  margin: auto
-  justify-content: center
-  flex-wrap: wrap
-  // flex-wrap: nowrap
-  align-content: center
-  align-items: center
-  h1, h3
-    width: 100%
-  button
+  // perspective: 1px
+  // height: 100vh
+  .hero-inner
+    text-align: center
     margin: auto
+    display: flex
+    flex: 1 0 auto
+    width: 100%
+    height: 100vh
+    justify-content: center
+    flex-wrap: wrap
+    align-content: center
+    align-items: center
+    color: white
+
+    // background: url('../img/head2.jpg')
+    // transform: translateZ(-1px) scale(2)
+    h1, h3
+      width: 100%
+    button
+      margin: auto
 
 // features
 .features
   .features-inner
+    opacity: 0
 
 // About
 .about
-  background: url('../img/context2.jpg')
-  background-position: center
-  background-attachment: fixed
-  background-repeat: no-repeat
-  background-size: cover
+  // background: url('../img/context2.jpg')
+  // background-position: center
+  // background-attachment: fixed
+  // background-repeat: no-repeat
+  // background-size: cover
+  overflow: hidden
   .about-inner
     .about-content
       background: rgba(128, 215, 247, 0.5)
+      .about-content-inner
+        opacity: 0
 
 // News
 .news
   .news-content
     .news-inner
+      opacity: 0
       .news-data
       .news-img
         .news-img-inner
@@ -87,20 +94,23 @@ header
 
 // Opaline
 .opaline
-  background: url('../img/why2.jpg')
   width: 100%
   height: 100%
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
-  background-attachment: fixed
+  // background: url('../img/why2.jpg')
+  // background-position: center
+  // background-repeat: no-repeat
+  // background-size: cover
+  // background-attachment: fixed
   .opaline-inner
     .opaline-content
       background: rgba(128, 215, 247, 0.5)
+      .opaline-content-inner
+        opacity: 0
 
 // Team
 .team
   .team-inner
+    opacity: 0
     .team-content
     .team-img
       background: url('../img/team2.jpg')
@@ -115,30 +125,62 @@ header
   background: #dddddd
   .gallery-content
     .gallery-inner
+      opacity: 0
       .gallery-item
+        overflow: hidden
+        a
+          position: relative
+          cursor: pointer
+          // overflow: hidden
         img
           width: 100%
+          transition: all ease 0.4s
+          &:hover
+            transform: scale(1.05)
 
 // Sponsors
 .sponsors
   .sponsors-inner
+    opacity: 0
     .sponsors-content
       h4
         width: 100%
       img
         max-width: 100%
+      .sponsors-item
+        padding: 0 80px
+
+@media (min-width: 768px)
+  .sponsors
+    .sponsors-inner
+      .sponsors-content
+        h4
+        img
+        .sponsors-item
+          padding: 0 50px
 
 .prefooter
-  background: url('../img/thankyou2.jpg')
+  background: url('../img/thankyou3.jpg')
   background-position: center
   background-repeat: no-repeat
   background-size: cover
   .prefooter-inner
+    .row
+      opacity: 0
 
 
 footer
   background: rgba(36, 50, 59, 1)
   color: white
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //

@@ -33,19 +33,17 @@ header {
   header .header-inner {
     max-width: 1140px; } }
 
-.hero {
-  background: url("../img/head2.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+.hero .hero-inner {
   text-align: center;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  width: 100%;
+  height: 100vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -55,61 +53,87 @@ header {
   align-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
-  .hero h1, .hero h3 {
+  align-items: center;
+  color: white; }
+  .hero .hero-inner h1, .hero .hero-inner h3 {
     width: 100%; }
-  .hero button {
+  .hero .hero-inner button {
     margin: auto; }
 
+.features .features-inner {
+  opacity: 0; }
+
 .about {
-  background: url("../img/context2.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  overflow: hidden; }
   .about .about-inner .about-content {
     background: rgba(128, 215, 247, 0.5); }
+    .about .about-inner .about-content .about-content-inner {
+      opacity: 0; }
 
-.news .news-content .news-inner .news-img .news-img-inner {
-  background: url("../img/approach2.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.news .news-content .news-inner {
+  opacity: 0; }
+  .news .news-content .news-inner .news-img .news-img-inner {
+    background: url("../img/approach2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .opaline {
-  background: url("../img/why2.jpg");
   width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  height: 100%; }
   .opaline .opaline-inner .opaline-content {
     background: rgba(128, 215, 247, 0.5); }
+    .opaline .opaline-inner .opaline-content .opaline-content-inner {
+      opacity: 0; }
 
-.team .team-inner .team-img {
-  background: url("../img/team2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.team .team-inner {
+  opacity: 0; }
+  .team .team-inner .team-img {
+    background: url("../img/team2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .gallery {
   background: #dddddd; }
-  .gallery .gallery-content .gallery-inner .gallery-item img {
+  .gallery .gallery-content .gallery-inner {
+    opacity: 0; }
+    .gallery .gallery-content .gallery-inner .gallery-item {
+      overflow: hidden; }
+      .gallery .gallery-content .gallery-inner .gallery-item a {
+        position: relative;
+        cursor: pointer; }
+      .gallery .gallery-content .gallery-inner .gallery-item img {
+        width: 100%;
+        -webkit-transition: all ease 0.4s;
+        -o-transition: all ease 0.4s;
+        transition: all ease 0.4s; }
+        .gallery .gallery-content .gallery-inner .gallery-item img:hover {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05); }
+
+.sponsors .sponsors-inner {
+  opacity: 0; }
+  .sponsors .sponsors-inner .sponsors-content h4 {
     width: 100%; }
+  .sponsors .sponsors-inner .sponsors-content img {
+    max-width: 100%; }
+  .sponsors .sponsors-inner .sponsors-content .sponsors-item {
+    padding: 0 80px; }
 
-.sponsors .sponsors-inner .sponsors-content h4 {
-  width: 100%; }
-
-.sponsors .sponsors-inner .sponsors-content img {
-  max-width: 100%; }
+@media (min-width: 768px) {
+  .sponsors .sponsors-inner .sponsors-content .sponsors-item {
+    padding: 0 50px; } }
 
 .prefooter {
-  background: url("../img/thankyou2.jpg");
+  background: url("../img/thankyou3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  .prefooter .prefooter-inner .row {
+    opacity: 0; }
 
 footer {
   background: #24323b;
