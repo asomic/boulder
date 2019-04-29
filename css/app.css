@@ -70,7 +70,7 @@ header {
   .about .about-inner .about-content {
     background: rgba(128, 215, 247, 0.5); }
 
-.news .news-inner .news-img .news-img-inner {
+.news .news-content .news-inner .news-img .news-img-inner {
   background: url("../img/approach2.jpg");
   height: 100%;
   background-position: center;
@@ -94,16 +94,22 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.sponsors .sponsors-inner h4 {
+.gallery {
+  background: #dddddd; }
+  .gallery .gallery-content .gallery-inner .gallery-item img {
+    width: 100%; }
+
+.sponsors .sponsors-inner .sponsors-content h4 {
   width: 100%; }
 
-.sponsors .sponsors-inner img {
+.sponsors .sponsors-inner .sponsors-content img {
   max-width: 100%; }
 
 .prefooter {
   background: url("../img/thankyou2.jpg");
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 footer {
   background: #24323b;
