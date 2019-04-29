@@ -10,58 +10,100 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/pushy.css">
   <link rel="stylesheet" href="css/app.css">
 
 </head>
-<body>
+<body id="container">
+
+  <!-- Pushy Menu -->
+  <nav class="pushy pushy-left">
+    <div class="pushy-content">
+      <ul>
+        <li class="pushy-link" id="link-1">
+          <a href="#features">Features</a>
+        </li>
+        <li class="pushy-link" id="link-2">
+          <a href="#about">About Us</a>
+        </li>
+        <li class="pushy-link" id="link-3">
+          <a href="#why">Why</a>
+        </li>
+        <li class="pushy-link" id="link-4">
+          <a href="#care">Why We Care</a>
+        </li>
+        <li class="pushy-link" id="link-5">
+          <a href="#team">Team</a>
+        </li>
+        <li class="pushy-link" id="link-6">
+          <a href="#photos">Photos</a>
+        </li>
+        <li class="pushy-link" id="link-7">
+          <a href="#touch">Get in Touch</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="site-overlay"></div>
+
   <!-- Header -->
   <header>
-    <div class="header-inner pt-3">
+    <div class="header-inner pt-4 pt-md-5">
       <div class="logo-wrapper">
-          <img class="logo" src="img/logo.png" alt="Boulder Natales">
+        <a href="/  ">
+          <!-- <img class="logo" src="img/logo.png" alt="Boulder Natales"> -->
+          <h4>BOULDER NATALES</h4>
+        </a>
+      </div>
+      <div class="menu-btn">
+        <span class="hamburger">☰</span>
       </div>
     </div>
   </header>
 
   <!-- HERO -->
   <div class="hero">
-    <div class="hero-inner parallax-window" data-parallax="scroll" data-image-src="/img/head2.jpg">
-      <h1>Boulder Natales</h1>
-      <h3>High-tech / Low-carbon / High-efficiency</h3>
+    <div class="hero-inner parallax-window px-5" data-parallax="scroll" data-image-src="/img/head2.jpg">
+      <h1 class="mb-4">Phasellus dignissim lorem sem sed hendrerit.</h1>
+      <h4 class="mb-4">Pellentesque non risus ut nibh vulputate auctor sit amet non felis</h4>
+      <br>
+      <br>
+      <br>
       <button type="button" class="btn btn-primary">Primary</button>
     </div>
   </div>
 
   <!-- FEATURES -->
-  <div class="features">
+  <div class="features" id="features">
     <div class="features-inner container animated my-md-5 py-md-5">
-      <div class="row py-5">
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h4>Focus</h4>
+      <div class="row py-3 py-lg-5">
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 pr-2 pr-lg-1">
+          <h4 class="mb-3 mb-md-4">Focus</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis facilis explicabo quae fuga dolor, possimus, iusto libero placeat consectetur nesciunt ducimus tempora ab, sapiente aspernatur inventore cum quis natus et.</p>
         </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h4>Focus</h4>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 pr-2 pr-lg-1">
+          <h4 class="mb-3 mb-md-4">Focus</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis beatae cum adipisci consequatur eum nostrum doloribus dolore explicabo quas architecto fugiat optio nisi itaque quasi omnis voluptate error, nemo qui?</p>
         </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h4>Focus</h4>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 pr-2 pr-lg-1">
+          <h4 class="mb-3 mb-md-4">Focus</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tempore sit fugiat quisquam expedita aperiam. Alias, totam, quae tempora, magni et illo maxime labore autem perspiciatis fugiat, deleniti odit. Vel.</p>
         </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h4>Focus</h4>
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 pr-2 pr-lg-1">
+          <h4 class="mb-3 mb-md-4">Focus</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam optio dolorum amet non sequi. Ea necessitatibus, minima illo ad animi omnis inventore dolore nemo ex, asperiores tempore, cupiditate placeat, amet.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="about parallax-window" data-parallax="scroll" data-image-src="/img/context2.jpg">
+  <div class="about parallax-window" data-parallax="scroll" data-image-src="/img/context2.jpg" id="about">
     <div class="about-inner container">
       <div class="about-content col-md-6 offset-md-6 px-md-5 my-4 my-md-0 py-md-5">
         <div class="about-content-inner py-5 px-2 animated">
-          <h3>Why Create the Extreme Lodge?</h3>
-          <h5>The Context</h5>
+          <h3 class="mb-4">Why Create the Extreme Lodge?</h3>
+          <h5 class="mb-2">The Context</h5>
           <p>
             The world is facing unprecedented challenges in 2019 of which the two most challenging must be those of adapting to rapid climate change and learning to live without terminally polluting the planet. The Polar Lodge is a highly focussed project looking at ways of tackling those two key challenges in the extreme environments of Antarctica.
             Stay tuned to see how the building performs. Will it keep the researchers thermally safe and sheltered from the extremely high winds?.
@@ -71,13 +113,13 @@
     </div>
   </div>
 
-  <div class="news">
+  <div class="news" id="why">
     <div class="news-content">
       <div class="news-inner container animated py-3">
         <div class="row py-5 my-md-5">
           <div class="col-md-7 news-data pr-md-5">
-            <h3>Approach</h3>
-            <h5>The Challenge</h5>
+            <h3 class="mb-4">Approach</h3>
+            <h5 class="mb-2">The Challenge</h5>
             <p>We are creating the extreme lodge because the world’s weather is becoming more extreme and we aim to help inform and provide temporary, and emergency shelters in areas of extreme cold and winds that are easily transportable and that leave no pollution behind them. Polar Lodge version 1 was tested in 2016. It was re-eingineered into Polar Lodge version 2. How well will Polar Lodge 2 work? We don’t know but what is sure is that the knowledge gained from it will change the way we look at final structure design not only in tents but in the buildings around the world that will have to become stronger and safer to survive in the increasingly extreme climate and weather events that are growing commonplace everywhere.</p>
             <button type="button" class="btn btn-primary">Primary</button>
           </div>
@@ -90,11 +132,11 @@
     </div>
   </div>
 
-  <div class="opaline parallax-window pt-1 pt-md-0" data-parallax="scroll" data-image-src="/img/why2.jpg">
+  <div class="opaline parallax-window pt-1 pt-md-0" data-parallax="scroll" data-image-src="/img/why2.jpg" id="care">
     <div class="opaline-inner container my-4 my-md-0">
       <div class="opaline-content col-md-6 px-md-5 py-md-5">
         <div class="opaline-content-inner py-5 px-2 animated">
-          <h3>Why we Care</h3>
+          <h3 class="mb-4">Why we Care</h3>
           <p>
             <i>
               We are passionate about the built environment and love making buildings more efficient and effective.
@@ -111,13 +153,13 @@
     </div>
   </div>
 
-  <div class="team">
+  <div class="team" id="team">
     <div class="team-content">
       <div class="team-inner container py-3 animated">
         <div class="row py-5 my-md-5">
           <div class="team-content col-md-7 pr-md-5">
-            <h3>Team</h3>
-            <h5>The Core Team</h5>
+            <h3 class="mb-4">Team</h3>
+            <h5 class="mb-2">The Core Team</h5>
             <p>
               <b>Manuel Correia Guedes</b> created the Polar Lodge project in 2014 and led it ever since. Manuel is a Cambridge trained architect who is the Director of the Architectural Research Centre at the Instituto Superior Técnico at the University of Lisbon, that includes architectural engineering in its portfolio of courses. His many books are based on a broad international experience of passive and sustainable design in the Far East and Africa as well as Europe.
             </p>
@@ -129,9 +171,9 @@
     </div>
   </div>
 
-  <div class="gallery">
+  <div class="gallery" id="photos">
     <div class="container py-3">
-      <div class="gallery-content row py-md-2 my-5">
+      <div class="gallery-content row py-md-2 my-4 my-md-5">
         <div class="gallery-inner col-12 card-columns animated">
           <div class="gallery-item card">
             <a data-fancybox="gallery" href="img/m1.jpg">
@@ -173,7 +215,7 @@
     </div>
   </div>
 
-  <div class="sponsors">
+  <div class="sponsors" id="touch">
     <div class="sponsors-inner animated">
       <div class="sponsors-content container py-md-3">
         <div class="row pt-5 pb-4 mt-4 mb-5">
@@ -222,6 +264,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/pushy.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

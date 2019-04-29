@@ -1,6 +1,14 @@
 $(function(){
 
-  // Scroller
+  // Scroll -> Link To
+  $('#link-1').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+  });
+
+  // Animations Scroller
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
       var preFeatures = $('.hero').offset().top + 200;

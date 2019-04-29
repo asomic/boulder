@@ -1,5 +1,10 @@
 body
 
+.pushy
+  .pushy-content
+    ul
+      padding-left: 0
+
 header
   position: absolute
   width: 100%
@@ -14,6 +19,27 @@ header
     margin: auto
     display: flex
     justify-content: space-between
+    align-items: center
+    align-content: center
+  .logo-wrapper
+    a
+      text-decoration: none
+    h4
+      color: rgba(black, 0.8)
+      font-weight: bold
+      // letter-spacing: -0.1px
+      transition: all ease 0.3s
+      margin: 0
+      font-size: 20px
+      &:hover
+        color: rgba(black, 0.4)
+  .menu-btn
+    color: rgba(black, 0.8)
+    cursor: pointer
+    font-size: 30px
+    transition: all ease 0.3s
+    &:hover
+      color: rgba(black, 0.4)
 
 @media (min-width: 576px)
   header
@@ -24,6 +50,10 @@ header
   header
     .header-inner
       max-width: 720px
+    .logo-wrapper
+      a
+      h4
+        font-size: 22px
 
 @media (min-width: 992px)
   header
@@ -53,10 +83,31 @@ header
 
     // background: url('../img/head2.jpg')
     // transform: translateZ(-1px) scale(2)
-    h1, h3
+    h1, h2, h3, h4, h5, h6
       width: 100%
+    h1
+      margin: auto
+      font-size: 2.3em
+      line-height: 1.15em
+    h4
+      font-weight: normal
     button
       margin: auto
+
+@media (min-width: 768px)
+  .hero
+    .hero-inner
+      h1
+        width: 70%
+        font-size: 3.3em
+        line-height: 1.2em
+
+@media (min-width: 1440px)
+  .hero
+    .hero-inner
+      h1
+        font-size: 4em
+        line-height: 1.3em
 
 // features
 .features
