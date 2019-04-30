@@ -222,14 +222,14 @@ footer {
   footer .footer-inner h3, footer .footer-inner h4, footer .footer-inner h5 {
     font-weight: 800;
     letter-spacing: 1px;
-    font-size: 16px; }
+    font-size: 17px; }
   footer .footer-inner img {
     vertical-align: middle; }
   footer .footer-inner p {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0;
-    font-size: 15px; }
+    font-size: 14px; }
   footer .footer-inner a {
     color: #99e600;
     opacity: 1;
