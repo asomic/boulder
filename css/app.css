@@ -40,7 +40,7 @@ header {
     -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.8px; }
     header .logo-wrapper h4:hover {
       color: rgba(0, 0, 0, 0.4); }
@@ -135,8 +135,11 @@ header {
     font-size: 4em;
     line-height: 1.3em; } }
 
-.features .features-inner h4 {
-  font-weight: 700; }
+.features .features-inner h4, .features .features-inner h5 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 19px; }
 
 .features .features-inner img {
   max-width: 100%;
@@ -150,11 +153,15 @@ header {
   overflow: hidden; }
   .about .about-inner .about-content {
     background: rgba(128, 215, 247, 0.5); }
-    .about .about-inner .about-content .about-content-inner h2, .about .about-inner .about-content .about-content-inner h3 {
-      font-weight: 700; }
+    .about .about-inner .about-content .about-content-inner h2, .about .about-inner .about-content .about-content-inner h3, .about .about-inner .about-content .about-content-inner h4 {
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase; }
 
-.service .service-content .service-inner .service-data h2, .service .service-content .service-inner .service-data h3 {
-  font-weight: 700; }
+.service .service-content .service-inner .service-data h2, .service .service-content .service-inner .service-data h3, .service .service-content .service-inner .service-data h4 {
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase; }
 
 .service .service-content .service-inner .service-img .service-img-inner {
   background: url("../img/approach2.jpg");
@@ -168,11 +175,15 @@ header {
   height: 100%; }
   .opaline .opaline-inner .opaline-content {
     background: rgba(128, 215, 247, 0.5); }
-    .opaline .opaline-inner .opaline-content .opaline-content-inner h2, .opaline .opaline-inner .opaline-content .opaline-content-inner h3 {
-      font-weight: 700; }
+    .opaline .opaline-inner .opaline-content .opaline-content-inner h2, .opaline .opaline-inner .opaline-content .opaline-content-inner h3, .opaline .opaline-inner .opaline-content .opaline-content-inner h4 {
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase; }
 
-.team .team-inner .team-content h2, .team .team-inner .team-content h3 {
-  font-weight: 700; }
+.team .team-inner .team-content h2, .team .team-inner .team-content h3, .team .team-inner .team-content h4 {
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase; }
 
 .team .team-inner .team-img {
   background: url("../img/team2.jpg");
