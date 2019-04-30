@@ -1,4 +1,5 @@
 body
+  font-family: 'Heebo', sans-serif
 
 .pushy
   .pushy-content
@@ -71,11 +72,11 @@ header
 .hero
   // perspective: 1px
   // height: 100vh
+  width: 100%
   .hero-inner
     text-align: center
     margin: auto
     display: flex
-    flex: 1 0 auto
     width: 100%
     height: 100vh
     justify-content: center
@@ -83,15 +84,13 @@ header
     align-content: center
     align-items: center
     color: white
-
-    // background: url('../img/head2.jpg')
-    // transform: translateZ(-1px) scale(2)
     h1, h2, h3, h4, h5, h6
       width: 100%
     h1
       margin: auto
       font-size: 2.3em
       line-height: 1.15em
+      font-weight: 700
     h4
       font-weight: normal
       line-height: 1.2em
@@ -101,8 +100,9 @@ header
 @media (min-width: 768px)
   .hero
     .hero-inner
+      width: 70%
       h1
-        width: 70%
+        // width: 70%
         font-size: 3.3em
         line-height: 1.2em
       h4
@@ -118,7 +118,19 @@ header
 // features
 .features
   .features-inner
-    opacity: 0
+    // opacity: 0
+    h4
+      font-weight: 700
+    img
+      max-width: 100%
+      width: 120px
+
+@media (min-width: 768px)
+  .features
+    .features-inner
+      h4
+      img
+        width: 100px
 
 // About
 .about
@@ -132,16 +144,20 @@ header
     .about-content
       background: rgba(128, 215, 247, 0.5)
       .about-content-inner
-        opacity: 0
+        // opacity: 0
+        h2, h3
+          font-weight: 700
 
 // News
-.news
-  .news-content
-    .news-inner
-      opacity: 0
-      .news-data
-      .news-img
-        .news-img-inner
+.service
+  .service-content
+    .service-inner
+      // opacity: 0
+      .service-data
+        h2, h3
+          font-weight: 700
+      .service-img
+        .service-img-inner
           background: url('../img/approach2.jpg')
           // width: 100%
           height: 100%
@@ -162,13 +178,17 @@ header
     .opaline-content
       background: rgba(128, 215, 247, 0.5)
       .opaline-content-inner
-        opacity: 0
+        // opacity: 0
+        h2, h3
+          font-weight: 700
 
 // Team
 .team
   .team-inner
-    opacity: 0
+    // opacity: 0
     .team-content
+      h2, h3
+        font-weight: 700
     .team-img
       background: url('../img/team2.jpg')
       // width: 100%
@@ -182,7 +202,7 @@ header
   background: #dddddd
   .gallery-content
     .gallery-inner
-      opacity: 0
+      // opacity: 0
       .gallery-item
         overflow: hidden
         a
@@ -196,25 +216,25 @@ header
             transform: scale(1.05)
 
 // Sponsors
-.sponsors
-  .sponsors-inner
-    opacity: 0
-    .sponsors-content
-      h4
-        width: 100%
-      img
-        max-width: 100%
-      .sponsors-item
-        padding: 0 80px
-
-@media (min-width: 768px)
-  .sponsors
-    .sponsors-inner
-      .sponsors-content
-        h4
-        img
-        .sponsors-item
-          padding: 0 50px
+// .sponsors
+//   .sponsors-inner
+//     // opacity: 0
+//     .sponsors-content
+//       h4
+//         width: 100%
+//       img
+//         max-width: 100%
+//       .sponsors-item
+//         padding: 0 80px
+//
+// @media (min-width: 768px)
+//   .sponsors
+//     .sponsors-inner
+//       .sponsors-content
+//         h4
+//         img
+//         .sponsors-item
+//           padding: 0 50px
 
 .prefooter
   background: url('../img/thankyou3.jpg')
@@ -223,12 +243,16 @@ header
   background-size: cover
   .prefooter-inner
     .row
-      opacity: 0
+      h2
+        font-weight: 700
+      // opacity: 0
 
 
 footer
   background: rgba(36, 50, 59, 1)
   color: white
+  h3
+    font-weight: 700
 //
 //
 //
