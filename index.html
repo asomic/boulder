@@ -35,7 +35,7 @@
   <div class="site-overlay"></div>
 
   <!-- Header -->
-  <header>
+  <header class="animated fadeIn delay-05s">
     <div class="header-inner">
       <div class="logo-wrapper">
         <a href="/  ">
@@ -51,7 +51,7 @@
 
   <!-- HERO -->
   <div class="hero parallax-window" data-parallax="scroll" data-image-src="/img/head2.jpg">
-    <div class="hero-inner  px-5" >
+    <div class="hero-inner px-5 wow fadeIn">
       <h1 class="mt-5 mb-4">Phasellus dignissim lorem sem sed hendrerit.</h1>
       <br>
       <br>
@@ -64,7 +64,9 @@
   <div class="features" id="features">
     <div class="features-inner container animated my-md-5 py-md-5">
       <div class="row pt-5 pb-4 pt-md-2 pb-mb-1 py-lg-5 text-center">
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 px-3 pt-3 pt-md-0">
+
+        <!-- Item -->
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 px-3 pt-3 pt-md-0 wow fadeInUp" data-wow-delay="0.1s">
           <img class="mb-4 mb-lg-4" src="/img/icon-boulder.png">
           <h4 class="mb-3 mb-md-4">Boulder</h4>
           <p>
@@ -72,7 +74,9 @@
               salidas a la roca y disponemos de transporte directo a sectores de rutas deportivas.
           </p>
         </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 px-3">
+
+        <!-- Item -->
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 px-3 wow fadeInUp" data-wow-delay="0.3s">
           <img class="mb-4 mb-lg-4" src="/img/icon-torres.png">
           <h4 class="mb-3 mb-md-4">Tours Torres del Paine</h4>
           <p>
@@ -80,7 +84,9 @@
             combustible. Se visitaran a los principales atractivos de Torres del Paine.
           </p>
         </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 px-3">
+
+        <!-- Item -->
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 px-3 wow fadeInUp" data-wow-delay="0.5s">
           <img class="mb-4 mb-lg-4" src="/img/icon-trekking.png">
           <h4 class="mb-3 mb-md-4">Tours Alternativos</h4>
           <p>
@@ -88,7 +94,9 @@
             de Torres del paine
           </p>
         </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 px-3">
+
+        <!-- Item -->
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 px-3 wow fadeInUp" data-wow-delay="0.7s">
           <img class="mb-4 mb-lg-4" src="/img/icon-rent.png">
           <h4 class="mb-3 mb-md-4">Rent a Car</h4>
           <p>
@@ -101,7 +109,7 @@
     </div>
   </div>
 
-  <div class="about parallax-window" data-parallax="scroll" data-image-src="/img/m16.jpg" id="about">
+  <div class="about parallax-window wow fadeIn" data-parallax="scroll" data-image-src="/img/m16.jpg" id="about">
     <div class="about-inner container">
       <div class="about-content col-md-6 offset-md-6 px-md-5 my-4 my-md-0 py-md-5">
         <div class="about-content-inner py-5 px-2 animated">
@@ -119,7 +127,7 @@
   <div class="service" id="why">
     <div class="service-content">
       <div class="service-inner container animated py-3">
-        <div class="row py-5 my-md-5">
+        <div class="row py-5 my-md-5 wow fadeIn">
 
           <div class="col-md-7 service-data pr-md-5 mb-md-5">
             <h2 class="mb-4">Tour Torres del Paine</h2>
@@ -144,7 +152,7 @@
     </div>
   </div>
 
-  <div class="opaline parallax-window pt-1 pt-md-0" data-parallax="scroll" data-image-src="/img/why2.jpg" id="care">
+  <div class="opaline parallax-window pt-1 pt-md-0 wow fadeIn" data-parallax="scroll" data-image-src="/img/why2.jpg" id="care">
     <div class="opaline-inner container my-4 my-md-0">
       <div class="opaline-content col-md-6 px-md-5 py-md-5">
         <div class="opaline-content-inner py-5 px-2 animated">
@@ -165,7 +173,7 @@
   <div class="gallery" id="photos">
     <div class="container py-3">
       <div class="gallery-content row py-md-2 my-4 my-md-5">
-        <div class="gallery-inner col-12 card-columns animated">
+        <div class="gallery-inner col-12 card-columns animated wow fadeIn">
           <div class="gallery-item card">
             <a data-fancybox="gallery" href="img/m8.jpg">
               <img src="img/m8.jpg">
@@ -236,7 +244,7 @@
     </div>
   </div>
 
-  <div class="team" id="team">
+  <div class="team wow fadeIn" id="team">
     <div class="team-content">
       <div class="team-inner container py-3 animated">
         <div class="row py-5 my-md-5">
@@ -276,7 +284,7 @@
   </div> -->
 
   <div class="prefooter">
-    <div class="prefooter-inner container">
+    <div class="prefooter-inner container wow fadeIn">
       <div class="row py-5 animated">
         <div class="col-12 py-5 my-5 text-center">
           <h2 class="mb-3 mb-lg-4">Thanks for visiting!</h2>
@@ -304,6 +312,7 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/pushy.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

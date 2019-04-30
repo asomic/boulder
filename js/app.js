@@ -47,6 +47,8 @@ $(function(){
 
   });
 
+  new WOW().init();
+
   $('.gallery').masonry({
     // options
     itemSelector : '.item'
