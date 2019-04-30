@@ -35,14 +35,23 @@ header {
     text-decoration: none; }
   header .logo-wrapper h4 {
     color: rgba(0, 0, 0, 0.8);
-    font-weight: bold;
+    font-weight: 800;
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
     margin: 0;
-    font-size: 20px; }
+    font-size: 18px;
+    letter-spacing: 0.8px; }
     header .logo-wrapper h4:hover {
       color: rgba(0, 0, 0, 0.4); }
+  header .logo-wrapper .logo {
+    width: 220px;
+    opacity: 1;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s; }
+    header .logo-wrapper .logo:hover {
+      opacity: 0.6; }
   header .menu-btn {
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
@@ -50,8 +59,13 @@ header {
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     transition: all ease 0.3s; }
+    header .menu-btn span {
+      font-weight: 800;
+      text-shadow: -0.5px 0 rgba(0, 0, 0, 0.8), 0 0.5px rgba(0, 0, 0, 0.8), 0.5px 0 rgba(0, 0, 0, 0.8), 0 -0.5px rgba(0, 0, 0, 0.8); }
     header .menu-btn:hover {
       color: rgba(0, 0, 0, 0.4); }
+      header .menu-btn:hover span {
+        text-shadow: -0.5px 0 rgba(0, 0, 0, 0.4), 0 0.5px rgba(0, 0, 0, 0.4), 0.5px 0 rgba(0, 0, 0, 0.4), 0 -0.5px rgba(0, 0, 0, 0.4); }
 
 @media (min-width: 576px) {
   header .header-inner {
@@ -62,7 +76,7 @@ header {
     padding-top: 3em;
     max-width: 720px; }
   header .logo-wrapper h4 {
-    font-size: 22px; } }
+    font-size: 20px; } }
 
 @media (min-width: 992px) {
   header .header-inner {
@@ -194,5 +208,23 @@ header {
 footer {
   background: #24323b;
   color: white; }
-  footer h3 {
-    font-weight: 700; }
+  footer .footer-inner h3, footer .footer-inner h4, footer .footer-inner h5 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 16px; }
+  footer .footer-inner img {
+    vertical-align: middle; }
+  footer .footer-inner p {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0;
+    font-size: 15px; }
+  footer .footer-inner a {
+    color: #99e600;
+    opacity: 1;
+    text-decoration: none;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s; }
+    footer .footer-inner a:hover {
+      color: white; }
