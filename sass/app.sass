@@ -9,6 +9,10 @@ body
     ul
       padding-left: 0
 
+.btn-regular
+  background: black !important
+  border: 0
+
 header
   position: absolute
   width: 100%
@@ -85,8 +89,6 @@ header
       max-width: 1140px
 
 .hero
-  // perspective: 1px
-  // height: 100vh
   width: 100%
   .hero-inner
     text-align: center
@@ -103,8 +105,8 @@ header
       width: 100%
     h1
       margin: auto
-      font-size: 2.3em
-      line-height: 1.15em
+      font-size: 2em
+      line-height: 1.2em
       font-weight: 700
     h4
       font-weight: normal
@@ -170,22 +172,25 @@ header
       // background: rgba(255, 255, 255, 0.4)
       // background: red
       z-index: 1
+      overflow: hidden
+      background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.6) 60%)
       &:after
         content: ''
         z-index: -1
         position: absolute
-        top: 0
-        left: 0
-        bottom: 0
-        right: 0
+        transform: translate(0px, 0px, 0px)
+        top: -100px
+        left: -100px
+        bottom: -100px
+        right: -100px
+        padding: 100px
         margin: auto
-        width: 100%
-        height: 100%
-        // background: url('../img/blur.jpg')
-        background: rgba(white, 0.4)
-        // -webkit-box-shadow: inset 500px 500px 500px 43px rgba(255,255,255,0.7)
-        // -moz-box-shadow: inset 500px 500px 500px 43px rgba(255,255,255,0.7)
-        // box-shadow: inset 500px 500px 500px 43px rgba(255,255,255,0.7)
+        width: 150%
+        height: 150%
+        background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.05) 45%, rgba(0, 0, 0, 0.1) 60%)
+        -webkit-filter: blur(20px)
+        -o-filter: blur(20px)
+        filter: blur(20px)
       .about-content-inner
         // opacity: 0
         h2, h3, h4
@@ -224,7 +229,27 @@ header
   .opaline-inner
     .opaline-content
       // background: rgba(128, 215, 247, 0.5)
-      background: rgba(255, 255, 255, 0.4)
+      // background: rgba(255, 255, 255, 0.6)
+      z-index: 1
+      overflow: hidden
+      background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.6) 60%)
+      &:after
+        content: ''
+        z-index: -1
+        position: absolute
+        transform: translate(0px, 0px, 0px)
+        top: -100px
+        left: -100px
+        bottom: -100px
+        right: -100px
+        padding: 100px
+        margin: auto
+        width: 150%
+        height: 150%
+        background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.05) 45%, rgba(0, 0, 0, 0.1) 60%)
+        -webkit-filter: blur(20px)
+        -o-filter: blur(20px)
+        filter: blur(20px)
       .opaline-content-inner
         // opacity: 0
         h2, h3, h4
@@ -289,7 +314,7 @@ header
 //           padding: 0 50px
 
 .prefooter
-  background: url('../img/thankyou3.jpg')
+  background: url('../img/why2.jpg')
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -297,7 +322,43 @@ header
     .row
       h2
         font-weight: 700
-      // opacity: 0
+      img
+        width: 20px
+        margin: 0
+        margin-right: 6px
+        vertical-align: -4px
+      a
+        padding: 0
+        vertical-align: middle
+      .btn.natales
+        background: black
+        color: white
+        padding-left: 0
+        vertical-align: middle
+        padding: 6px 16px
+        margin: 6px 4px
+        border: none
+        opacity: 1
+        transition: all ease 0.3s
+        &:hover
+          opacity: 0.9
+      .btn-facebook
+        background: #3b5998 !important
+      .btn-instagram
+        // background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf) !important
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%) !important
+      .btn-whatsapp
+        background: #25D366 !important
+
+@media (min-width: 768px)
+  .prefooter
+    .prefooter-inner
+      .row
+        h2
+        img
+        a
+        .btn.natales
+          margin: 0px 4px
 
 footer
   background: rgba(36, 50, 59, 1)
