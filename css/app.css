@@ -155,7 +155,19 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.4); }
+    z-index: 1; }
+    .about .about-inner .about-content:after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.4); }
     .about .about-inner .about-content .about-content-inner h2, .about .about-inner .about-content .about-content-inner h3, .about .about-inner .about-content .about-content-inner h4 {
       font-weight: 800;
       letter-spacing: 0.8px;
