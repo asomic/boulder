@@ -1,17 +1,19 @@
 $(function(){
 
-  // Scroll -> Link To
-  // $('#link-1').click(function(){
-  //   $('html, body').animate({
-  //       scrollTop: $( $.attr(this, 'href') ).offset().top
-  //   }, 500);
-  //   return false;
-  // });
+  function whenIsLoaded(){
+    $('.loading').addClass('fadeOut');
+    setTimeout(function(){
+      $('header, .hero-inner h1, .hero-inner h5, .hero-inner a').removeClass('d-none');
+      $('body').removeClass('overflow-block');
+    }, 1000);
 
-  new WOW().init();
+    new WOW().init();
 
-  $('.gallery').masonry({
-    itemSelector : '.item'
-  });
+    $('.gallery').masonry({
+      itemSelector : '.item'
+    });
+  }
+
+  window.onload = whenIsLoaded;
 
 });

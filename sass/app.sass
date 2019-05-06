@@ -3,6 +3,25 @@ html
 
 body
   font-family: 'Heebo', sans-serif
+body.overflow-block
+  overflow: hidden
+
+.loading
+  position: absolute
+  top: 0
+  width: 100%
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  height: 100vh
+  text-align: center
+  vertical-align: middle
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    width: 15vw
 
 .pushy
   .pushy-content
@@ -90,6 +109,7 @@ header
 
 .hero
   width: 100%
+  // background: url('../img/head2.jpg')
   .hero-inner
     text-align: center
     margin: auto
@@ -382,6 +402,10 @@ footer
       transition: all ease 0.3s
       &:hover
         color: white
+
+.pushy
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99)
+
 //
 //
 //

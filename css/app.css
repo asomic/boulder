@@ -4,6 +4,32 @@ html {
 body {
   font-family: 'Heebo', sans-serif; }
 
+body.overflow-block {
+  overflow: hidden; }
+
+.loading {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .loading img {
+    width: 15vw; }
+
 .pushy .pushy-content ul {
   padding-left: 0; }
 
@@ -335,3 +361,10 @@ footer {
     transition: all ease 0.3s; }
     footer .footer-inner a:hover {
       color: white; }
+
+.pushy {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: -webkit-transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  -o-transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
