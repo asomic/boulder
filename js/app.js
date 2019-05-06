@@ -9,9 +9,9 @@ $(function(){
 
     new WOW().init();
 
-    $('.gallery').masonry({
-      itemSelector : '.item'
-    });
+    // $('.gallery').masonry({
+    //   itemSelector : '.item'
+    // });
   }
 
   window.onload = whenIsLoaded();
