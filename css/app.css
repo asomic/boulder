@@ -2,9 +2,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Heebo', sans-serif; }
-
-body.overflow-block {
+  font-family: 'Heebo', sans-serif;
   overflow: hidden; }
 
 .loading {
