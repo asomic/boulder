@@ -227,10 +227,16 @@ header {
   text-transform: uppercase; }
 
 .service .service-content .service-inner .service-img .service-img-inner {
-  background: url("../img/approach2.jpg");
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; }
+
+.service .service-content .service-inner .service-img .img-1 {
+  background: url("../img/approach2.jpg");
+  background-size: cover; }
+
+.service .service-content .service-inner .service-img .img-2 {
+  background: url("../img/m10.jpg");
   background-size: cover; }
 
 .opaline {
