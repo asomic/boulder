@@ -118,7 +118,12 @@ header {
     max-width: 1140px; } }
 
 .hero {
-  width: 100%; }
+  width: 100%;
+  background: url("../img/head2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-position: 50% 30%; }
   .hero .hero-inner {
     text-align: center;
     margin: auto;
