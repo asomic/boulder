@@ -14,6 +14,6 @@ $(function(){
     });
   }
 
-  window.onload = whenIsLoaded;
+  window.onload = whenIsLoaded();
 
 });
