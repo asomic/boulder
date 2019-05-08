@@ -26,7 +26,11 @@ body {
   -ms-flex-align: center;
   align-items: center; }
   .loading img {
-    width: 15vw; }
+    width: 50vw; }
+
+@media (min-width: 900px) {
+  .loading img {
+    width: 20vw; } }
 
 .pushy .pushy-content ul {
   padding-left: 0; }

@@ -27,6 +27,12 @@ $(function(){
   	});
   }
 
-  window.onload = whenIsLoaded();
+  var hero = $('.hero');
+
+  // $('.hero').load(function(){
+  //   hero.onload = whenIsLoaded();
+  // });
+
+  hero.onload = whenIsLoaded();
 
 });
