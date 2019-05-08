@@ -342,7 +342,7 @@ header
 //           padding: 0 50px
 
 .prefooter
-  background: url('../img/why2.jpg')
+  background: url('../img/m12.jpg')
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -380,6 +380,8 @@ header
 
 @media (min-width: 768px)
   .prefooter
+    align-content: center
+    align-items: center
     .prefooter-inner
       .row
         h2
@@ -387,6 +389,61 @@ header
         a
         .btn.natales
           margin: 0px 4px
+
+@media (min-width: 900px)
+  .prefooter
+    height: 400px
+    .prefooter-inner
+      .row
+        h2
+        img
+        a
+
+@media (min-width: 1200px)
+  .prefooter
+    height: 440px
+    .prefooter-inner
+      .row
+        h2
+        img
+        a
+
+@media (min-width: 1400px)
+  .prefooter
+    // height: 440px
+    min-height: 500px
+    .prefooter-inner
+      .row
+        h2
+        img
+        a
+
+.map
+  .gmap_canvas
+    overflow: hidden
+    background: none !important
+    width: 100%
+    height: 400px
+
+@media (min-width: 768px)
+  .map
+    .gmap_canvas
+
+@media (min-width: 900px)
+  .map
+    .gmap_canvas
+
+@media (min-width: 1200px)
+  .map
+    .gmap_canvas
+      height: 440px
+
+@media (min-width: 1400px)
+  .map
+    height: 100%
+    .gmap_canvas
+      min-height: 500px
+      height: 100%
 
 footer
   background: rgba(36, 50, 59, 1)
