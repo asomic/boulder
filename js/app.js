@@ -35,4 +35,17 @@ $(function(){
 
   hero.onload = whenIsLoaded();
 
+  // $('#scroll-down').click(){
+  //   document.getElementById('youridhere').scrollIntoView();
+  // }
+  $('#scroll-down').click(function(){
+    var target = $('#servicios');
+
+    var top = target.offset().top;
+    $('html,body').animate({scrollTop: top}, 100);
+    return false;
+
+  });
+
+
 });
