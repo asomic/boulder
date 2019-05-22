@@ -1,4 +1,4 @@
-html
+khtml
   scroll-behavior: smooth
 
 body
@@ -186,25 +186,15 @@ header
 
 // About
 .about
-  // background: url('../img/context2.jpg')
-  // background-position: center
-  // background-attachment: fixed
-  // background-repeat: no-repeat
-  // background-size: cover
   overflow: hidden
   .about-inner
     .about-content
-      // background: rgba(128, 215, 247, 0.5)
-      // background: rgba(255, 255, 255, 0.4)
       position: relative
       width: 100%
       height: 100%
-      // background: url('../img/blur.jpg')
-      // background: rgba(255, 255, 255, 0.4)
-      // background: red
       z-index: 1
       overflow: hidden
-      background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.6) 60%)
+      background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.6) 45%, rgba(255, 255, 255, 0.7) 60%)
       &:after
         content: ''
         z-index: -1
@@ -218,7 +208,7 @@ header
         margin: auto
         width: 150%
         height: 150%
-        background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.05) 45%, rgba(0, 0, 0, 0.1) 60%)
+        background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.15) 45%, rgba(0, 0, 0, 0.15) 60%)
         -webkit-filter: blur(20px)
         -o-filter: blur(20px)
         filter: blur(20px)
@@ -255,18 +245,11 @@ header
 .opaline
   width: 100%
   height: 100%
-  // background: url('../img/why2.jpg')
-  // background-position: center
-  // background-repeat: no-repeat
-  // background-size: cover
-  // background-attachment: fixed
   .opaline-inner
     .opaline-content
-      // background: rgba(128, 215, 247, 0.5)
-      // background: rgba(255, 255, 255, 0.6)
       z-index: 1
       overflow: hidden
-      background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.6) 60%)
+      background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.6) 45%, rgba(255, 255, 255, 0.7) 60%)
       &:after
         content: ''
         z-index: -1
@@ -280,7 +263,7 @@ header
         margin: auto
         width: 150%
         height: 150%
-        background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.05) 45%, rgba(0, 0, 0, 0.1) 60%)
+        background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.15) 45%, rgba(0, 0, 0, 0.15) 60%)
         -webkit-filter: blur(20px)
         -o-filter: blur(20px)
         filter: blur(20px)
@@ -307,6 +290,14 @@ header
       background-position: center
       background-repeat: no-repeat
       background-size: cover
+
+@media (min-width: 900px)
+  .team
+    .team-inner
+      .team-content
+        h2, h3, h4
+      .team-img
+        min-height: 340px
 
 // gallery
 .gallery
@@ -374,8 +365,6 @@ header
         border: none
         opacity: 1
         transition: all ease 0.3s
-        &:hover
-          opacity: 0.9
       .btn-facebook
         background: #3b5998 !important
       .btn-instagram
@@ -451,6 +440,17 @@ header
       height: 500px
       // height: 100%
 
+// Buttons alt
+.btn-whatsapp
+  background: #25D366 !important
+  img
+    width: 20px
+    margin: 0
+    margin-right: 6px
+    vertical-align: -4px
+  &:hover
+    background: #21BD5B !important
+
 footer
   background: rgba(36, 50, 59, 1)
   color: white
@@ -466,7 +466,15 @@ footer
       color: rgba(white, 0.7)
       margin-bottom: 0
       font-size: 14px
-    a
+    span.info
+      color: white
+      font-size: 18px
+      font-weight: 600
+    a.info
+      color: rgba(white, 0.7)
+      font-weight: 600
+      font-size: 18px
+    a.asomic
       color: #99e600
       opacity: 1
       text-decoration: none
