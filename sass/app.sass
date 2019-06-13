@@ -148,16 +148,19 @@ header
       margin: auto
   .hero-image
     position: absolute
-    top: 0
+    top: -400px
     left: 0
     right: 0
     bottom: 0
+    margin: 0
     margin: auto
     text-align: center
     width: 100%
     height: 100%
     z-index: -1
-
+    // img
+    //   width: 100%
+    //   height: auto
 
 @media (min-width: 768px)
   .hero
@@ -170,6 +173,18 @@ header
         line-height: 1.2em
       h4
         line-height: 1.4em
+    .hero-image
+      top: 0
+
+@media (min-width: 1200px)
+  .hero
+    .hero-inner
+      h1
+    .hero-image
+      top: -40px
+      img
+        margin: 0
+        width: 100%
 
 @media (min-width: 1440px)
   .hero
@@ -177,6 +192,10 @@ header
       h1
         font-size: 4em
         line-height: 1.3em
+    .hero-image
+      padding: 0
+      top: -200px
+      // width: 110%
 
 // features
 .features

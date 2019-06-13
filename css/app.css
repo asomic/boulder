@@ -160,10 +160,11 @@ header {
       margin: auto; }
   .hero .hero-image {
     position: absolute;
-    top: 0;
+    top: -400px;
     left: 0;
     right: 0;
     bottom: 0;
+    margin: 0;
     margin: auto;
     text-align: center;
     width: 100%;
@@ -177,12 +178,24 @@ header {
       font-size: 3.3em;
       line-height: 1.2em; }
     .hero .hero-inner h4 {
-      line-height: 1.4em; } }
+      line-height: 1.4em; }
+  .hero .hero-image {
+    top: 0; } }
+
+@media (min-width: 1200px) {
+  .hero .hero-image {
+    top: -40px; }
+    .hero .hero-image img {
+      margin: 0;
+      width: 100%; } }
 
 @media (min-width: 1440px) {
   .hero .hero-inner h1 {
     font-size: 4em;
-    line-height: 1.3em; } }
+    line-height: 1.3em; }
+  .hero .hero-image {
+    padding: 0;
+    top: -200px; } }
 
 .features .features-inner h4, .features .features-inner h5 {
   font-weight: 800;
