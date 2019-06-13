@@ -14,17 +14,17 @@ $(function(){
 
     new WOW().init();
 
-    function Parallax() {
-    	scrollPos = $(this).scrollTop();
-
-    	$('.hero').css({
-    		'background-position': '50% ' + (30-scrollPos/10)+'%'
-    	});
-    }
-
-    $(window).scroll(function() {
-  		Parallax();
-  	});
+    // function Parallax() {
+    // 	scrollPos = $(this).scrollTop();
+    //
+    // 	$('.hero').css({
+    // 		'background-position': '50% ' + (30-scrollPos/10)+'%'
+    // 	});
+    // }
+    //
+    // $(window).scroll(function() {
+  	// 	Parallax();
+  	// });
   }
 
   var hero = $('.hero');
