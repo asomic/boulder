@@ -100,8 +100,8 @@
   <!-- HERO -->
   <div class="hero parallax-window">
     <div class="hero-inner px-5 animated fadeIn slow delay-2s">
-      <h1 class="mt-5 mb-4 d-none">Descubre la Patagonia Sur con guías locales de Puerto Natales.</h1>
-      <h5 class="d-none mb-3">Servicios turísticos y Tour Operador en Torres del Paine, Chile.</h5>
+      <h1 class="mt-5 mb-4 d-none">Descubre Torres del Paine con salidas diarias desde Puerto Natales.</h1>
+      <h5 class="d-none mb-3">Guías de trekking y Full day Paine activos. </h5>
       <br>
       <br>
       <br>
@@ -170,14 +170,17 @@
         <div class="opaline-content-inner py-5 px-2 animated">
           <h4 class="mb-4">Rent a Car</h4>
           <p>
-            Rio rent a car limitada cuenta con vehículos SUV marca Renault Duster y automoviles automaticos disponibles desde Puerto Natales. <br><br>
-            <b>Precios temporada baja</b>: $50.000 CLP por 24 horas.<br>
-            <b>Temporada alta</b>: $65.000 CLP diarios.<br><br>
+            Contamos con vehículos SUV marca Renault Duster, camionetas y automoviles automaticos disponibles desde Puerto Natales. <br><br>
+            <b>Precios temporada baja</b>: $45.000 CLP por 24 horas.<br>
+            <b>Temporada alta</b>: $60.000 CLP diarios.<br><br>
             Arriendos desde el 15 de Septiembre al 30 de Abril.
           </p>
           <a class="btn btn-primary btn-regular btn-whatsapp" href="https://wa.me/56979572915?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" role="button">
             <img src="/img/icon-whatsapp.png"> Contacta con Nosotros
           </a>
+          <button class="btn btn-secondary "  role="button" data-toggle="modal" data-target="#modalrent">
+            + Información
+         </button>
         </div>
       </div>
     </div>
@@ -202,15 +205,18 @@
             <a class="btn btn-primary btn-regular btn-whatsapp" href="https://wa.me/56979572915?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" role="button">
               <img src="/img/icon-whatsapp.png"> Contacta con Nosotros
             </a>
+            <button class="btn btn-secondary "  role="button" data-toggle="modal" data-target="#modaltour">
+              + Información
+           </button>
           </div>
           <div class="col-md-5 service-img mb-md-5">
             <div class="service-img-inner img-1"></div>
           </div>
 
-          <div class="col-md-5 service-img mt-4 mt-md-5">
+          <div class="col-md-5 service-img mt-4 mb-md-5 mt-md-5">
             <div class="service-img-inner img-2"></div>
           </div>
-          <div class="col-md-7 service-data pl-md-4 mt-4 mt-md-5">
+          <div class="col-md-7 service-data pl-md-4 mt-4 mb-md-5 mt-md-5">
             <h4 class="mb-4">Tours Alternativos</h4>
             <p>
               Trekkings de medio día en los alrededores de Puerto Natales:
@@ -227,6 +233,33 @@
             <a class="btn btn-primary btn-regular btn-whatsapp" href="https://wa.me/56979572915?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" role="button">
               <img src="/img/icon-whatsapp.png"> Contacta con Nosotros
             </a>
+            <button class="btn btn-secondary "  role="button" data-toggle="modal" data-target="#modalalternativo">
+              + Información
+           </button>
+          </div>
+          <div class="col-md-7 service-data pl-md-4 mt-4 mt-md-5">
+            <h4 class="mt-4">Excursión Escalada entre cuevas</h4>
+            <p>
+              Realizamos esta excursión de escalada deportiva en <strong>El Monumento Natural Cueva del Milodón</strong>, visitando sus diferentes cuevas y disfrutando
+              de este increíble lugar.<br><br>
+              <strong>Incluye:</strong>
+              <li>Transporte privado</li>
+              <li>Guía certificado</li>
+              <li>Navegación Glaciar Grey</li>
+              <li>Equipo de escalada completo </li>
+              <li>Snacks, te/cafe</li><br>
+              <strong>No incluye:</strong> 
+              <li>Entradas al monumento natural.</li>
+            </p>
+            <a class="btn btn-primary btn-regular btn-whatsapp" href="https://wa.me/56979572915?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" role="button">
+              <img src="/img/icon-whatsapp.png"> Contacta con Nosotros
+            </a>
+            <button class="btn btn-secondary "  role="button" data-toggle="modal" data-target="#modalescalada">
+               + Información
+            </button>
+          </div>
+          <div class="col-md-5 service-img mt-4 mt-md-5">
+            <div class="service-img-inner img-3"></div>
           </div>
 
         </div>
@@ -247,6 +280,9 @@
             Se realizan clases de escalada, entrenamientos deportivos, salidas a la roca y transporte directo a
             los sectores de rutas deportivas. Alquiler de equipo de escalada.
           </p>
+          <button class="btn btn-secondary "  role="button" data-toggle="modal" data-target="#modalboulder">
+            + Información
+         </button>
         </div>
       </div>
     </div>
@@ -293,12 +329,12 @@
           </div>
           <div class="gallery-item card">
             <a data-fancybox="gallery" href="img/m21.jpg">
-              <img src="img/m21.jpg">
+              <img src="img/m13.jpg">
             </a>
           </div>
           <div class="gallery-item card">
             <a data-fancybox="gallery" href="img/m13.jpg">
-              <img src="img/m13.jpg">
+              <img src="img/m21.jpg">
             </a>
           </div>
           <div class="gallery-item card">
@@ -396,6 +432,119 @@
     </div>
   </footer>
 
+  <!-- Modal rent -->
+  <div class="modal fade" id="modalrent" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tarifario Rent a car</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+                
+                
+            <p class="text-center"><strong>Transfer mercedes benz vito (7 + 1) / van maxxus (12 + 1) </strong></p>
+            <br>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Punta arenas - Puerto natales                         <span class="pull-right"><strong>$150.000</strong></span></li>   
+              <li class="list-group-item d-flex justify-content-between align-items-center">Punta arenas - Torres del paine                       <span class="pull-right"><strong>$250.000 </strong></span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Puerto natales - Torres del paine                     <span class="pull-right"><strong>$120.000  </strong></span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Día a disposición + chofer + combustible      <span class="pull-right"><strong>$200.000 </strong></span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Día a disposición + chofer guía + combustible <span class="pull-right"><strong>$250.000 </strong></span></li> 
+            </ul>
+                                  <br>        
+            <p class="text-center"><strong>Transfer renault duster </strong></p> 
+            <br>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Punta arenas - Puerto natales                 <span class="pull-right"><strong>$130.000 </strong></span></li>   
+              <li class="list-group-item d-flex justify-content-between align-items-center">Punta arenas - Torres del paine               <span class="pull-right"><strong> $200.000 </strong></span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Puerto natales - Torres del paine             <span class="pull-right"><strong>$110.000   </strong></span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Día a disposición + chofer + combustible      <span class="pull-right"><strong>$150.000 </strong></span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Día a disposición + chofer guía + combustible <span class="pull-right"><strong>$200.000</strong></span></li>             
+            </ul>
+            <br>
+            <p class="text-right"> *se cuenta con facturas exentas de iva  </p>
+                
+            
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal tour -->
+  <div class="modal fade" id="modaltour" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tours Torres del Paine</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            aca info mas detallada
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+  <!-- Modal Alternativos -->
+  <div class="modal fade" id="modalalternativo" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tours Alternativos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            aca info mas detallada
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  <!-- Modal escalada -->
+  <div class="modal fade" id="modalescalada" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tours Escalada</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            aca info mas detallada
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+  <!-- Modal boulder -->
+  <div class="modal fade" id="modalboulder" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Boulder</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            aca info mas detallada
+          </div>
+  
+        </div>
+      </div>
+    </div>
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -407,3 +556,4 @@
   <script src="js/app.js?v=3"></script>
 </body>
 </html>
+ 
